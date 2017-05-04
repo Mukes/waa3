@@ -22,6 +22,11 @@ public class AccountService implements IAccountService {
 	private IJMSSender jmsSender;
 	private ILogger logger;
 
+	private static final AccountService ACCOUNT_SERVICE = new AccountService();
+
+	public static AccountService getAccountService(){
+		return ACCOUNT_SERVICE;
+	}
 	public AccountService(){
 		accountDAO=new AccountDAO();
 		currencyConverter= new CurrencyConverter();

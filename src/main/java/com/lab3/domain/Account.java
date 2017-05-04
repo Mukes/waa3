@@ -7,7 +7,7 @@ public class Account {
 	long accountnumber;
 	Collection<AccountEntry> entryList = new ArrayList<AccountEntry>();
 	Customer customer;
-
+	double balance;
 
 	public Account (long accountnr){
 		this.accountnumber = accountnr;
